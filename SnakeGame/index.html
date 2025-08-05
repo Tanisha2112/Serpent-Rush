@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Serpent Rush</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+  <div class="overlay" id="startOverlay">
+    <h1>🐍 Serpent Rush</h1>
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <div class="overlay hidden" id="gameOverOverlay">
+    <h2>Game Over</h2>
+    <p>Your Score: <span id="finalScore">0</span></p>
+    <button onclick="restartGame()">Play Again</button>
+  </div>
+
+  <div class="body">
+    <div id="scoreBox">Score: 0</div>
+    <div id="hiscoreBox">HiScore: 0</div>
+    <div id="board"></div>
+
+    <div class="top-bar">
+      <div id="gameTimer">Time: 00:00</div>
+      <div class="sound-wrapper">
+        <button id="soundBtn" onclick="toggleSound()">🔊</button>
+      </div>
+    </div>
+
+
+    
+
+  </div>
+
+  <script src="js/index.js"></script>
+  <div id="clock" style="position: absolute; top: 10px; right: 10px; font-size: 20px; color: white;"></div>
+</body>
+</html>
